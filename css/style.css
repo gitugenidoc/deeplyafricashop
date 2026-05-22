@@ -32,6 +32,19 @@ button:disabled {
   opacity: 0.55;
 }
 
+.home-mark {
+  align-items: center;
+  display: inline-flex;
+  min-height: 40px;
+}
+
+.home-mark img {
+  filter: brightness(0) invert(1);
+  height: 40px;
+  object-fit: contain;
+  width: auto;
+}
+
 .pass-art {
   background:
     linear-gradient(145deg, rgba(255, 224, 136, 0.16), transparent 36%),
