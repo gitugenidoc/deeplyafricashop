@@ -1,0 +1,33 @@
+@media (max-width: 767px) {
+  .cart-line,
+  .cart-line-top {
+    flex-direction: column;
+  }
+
+  .cart-line-media {
+    flex-basis: auto;
+    width: 100%;
+  }
+
+  .reveal-passport {
+    grid-template-columns: 1fr;
+    padding: 24px;
+    text-align: center;
+  }
+
+  .country-badge {
+    justify-self: center;
+  }
+
+  .color-strip {
+    justify-content: center;
+  }
+
+  .pack-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quiz-item ol {
+    grid-template-columns: 1fr;
+  }
+}

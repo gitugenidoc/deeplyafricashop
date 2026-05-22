@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cart - Deeply Africa Shop</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&amp;family=Libre+Caslon+Text:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#353534",
+                        "on-tertiary-fixed": "#410004",
+                        "surface-container": "#201f1f",
+                        "inverse-on-surface": "#313030",
+                        "surface-bright": "#3a3939",
+                        "inverse-surface": "#e5e2e1",
+                        "secondary": "#e9c349",
+                        "on-surface": "#e5e2e1",
+                        "primary-fixed": "#a1f5b7",
+                        "on-primary-container": "#89dba0",
+                        "error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#574500",
+                        "secondary-fixed-dim": "#e9c349",
+                        "surface-dim": "#131313",
+                        "on-secondary": "#3c2f00",
+                        "secondary-fixed": "#ffe088",
+                        "on-background": "#e5e2e1",
+                        "tertiary": "#ffb3ae",
+                        "primary-fixed-dim": "#86d89d",
+                        "primary-container": "#006233",
+                        "surface-container-high": "#2a2a2a",
+                        "tertiary-container": "#a9121f",
+                        "on-primary-fixed-variant": "#00522a",
+                        "on-primary-fixed": "#00210d",
+                        "on-primary": "#00391b",
+                        "surface-container-lowest": "#0e0e0e",
+                        "outline": "#899389",
+                        "surface-tint": "#86d89d",
+                        "secondary-container": "#af8d11",
+                        "surface-variant": "#353534",
+                        "on-error": "#690005",
+                        "on-secondary-container": "#342800",
+                        "on-tertiary": "#68000b",
+                        "on-tertiary-fixed-variant": "#930015",
+                        "background": "#131313",
+                        "primary": "#86d89d",
+                        "tertiary-fixed-dim": "#ffb3ae",
+                        "outline-variant": "#3f4940",
+                        "surface-container-low": "#1c1b1b",
+                        "surface": "#131313",
+                        "tertiary-fixed": "#ffdad7",
+                        "inverse-primary": "#146c3c",
+                        "on-surface-variant": "#bfc9be",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary-container": "#ffb8b2",
+                        "on-secondary-fixed": "#241a00",
+                        "error": "#ffb4ab"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "margin-desktop": "64px",
+                        "base": "8px",
+                        "gutter": "24px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Hanken Grotesk"],
+                        "body-md": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-md": ["Libre Caslon Text"],
+                        "headline-display": ["Libre Caslon Text"],
+                        "headline-lg": ["Libre Caslon Text"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "headline-display": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { 
+            background: radial-gradient(circle at top, #b51236 0%, #6a081d 100%);
+            background-attachment: fixed;
+            color: white; 
+        }
+        .glass-nav { 
+            backdrop-filter: blur(20px); 
+            -webkit-backdrop-filter: blur(20px); 
+            background-color: rgba(106, 8, 29, 0.5);
+            border-bottom-color: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col font-body-md text-body-md antialiased selection:bg-white/20 selection:text-white" data-cart-page>
+<!-- TopNavBar -->
+<header class="glass-nav fixed top-0 w-full z-50 border-b">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md text-white tracking-tight" href="#">Deeply Africa Shop</a>
+<div class="flex gap-6 items-center hidden md:flex">
+<a class="text-white/70 hover:text-white transition-colors duration-300 font-label-caps text-label-caps" href="#">Collections</a>
+<a class="text-white/70 hover:text-white transition-colors duration-300 font-label-caps text-label-caps" href="#">Kits</a>
+<a class="text-white/70 hover:text-white transition-colors duration-300 font-label-caps text-label-caps" href="#">Bundles</a>
+<a class="text-white/70 hover:text-white transition-colors duration-300 font-label-caps text-label-caps" href="#">FAQ</a>
+</div>
+<div class="flex gap-4">
+<button class="text-white transition-opacity hover:opacity-80">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">shopping_bag</span>
+</button>
+<button class="text-white hover:opacity-80 transition-colors duration-300">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-[100px] pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<div class="mb-12 border-b border-white/10 pb-6">
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-white mb-2">Your Cart</h1>
+<p class="text-white/70 font-body-md text-body-md" data-cart-label>2 items in your premium selection.</p>
+<p class="text-white/70 font-body-md text-body-md" data-cart-message hidden></p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-gutter">
+<!-- Cart Items List -->
+<div class="lg:col-span-8 space-y-6" data-cart-lines>
+<!-- Item 1 -->
+<div class="flex flex-col sm:flex-row gap-6 bg-black/20 p-4 rounded-2xl border border-white/10 relative">
+<div class="w-full sm:w-32 h-32 bg-white/10 shrink-0 relative overflow-hidden rounded-xl">
+<img alt="Product Image" class="w-full h-full object-cover" data-alt="A striking digital installation art piece featuring glowing, generative geometric shapes suspended in a vast, minimalist gallery space. The room is illuminated by high-key, soft white lighting that creates a bright, modern light-mode aesthetic. The artwork relies on a sophisticated palette of deep blacks and pristine whites, punctuated by intense accents of vibrant green and gold. The mood is serene yet technologically advanced, embodying premium heritage sportswear vibes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxnBd4SCFnuNZOIGvGZ1-vVoXd0y5fftiSzcZAHSfNg5WB5dvbv_3CLUA4DxjTiy9QqcuG_2bw8FEtkxl_isocvRvyRTzACPIYz2n3mEV7Xso3-OdLXVOSWYtDH2bjoJ7WafJptILwSJOG1YYy1PdZt6ZdpsCtXXfi9eLjXgU6vrO3p-LYMgwVHOBjDaD9rYqsD_-lNCIRXMrpmm5BScN7GHbE60n2Ml6Fug5xckVhBEkFO1flzu6aPMe3LIpSMfxqtE9uudXrFH0"/>
+</div>
+<div class="flex flex-col flex-grow justify-between py-1">
+<div class="flex justify-between items-start gap-4">
+<div>
+<h3 class="font-body-lg text-body-lg text-white font-bold mb-1">Heritage 1994 Kit</h3>
+<p class="text-white/70 text-body-md font-body-md mb-2">Color: Forest Green | Size: L</p>
+</div>
+<p class="font-body-lg text-body-lg text-white font-bold whitespace-nowrap">$120.00</p>
+</div>
+<div class="flex justify-between items-end mt-4">
+<div class="flex items-center bg-white/10 border border-white/20 rounded-full overflow-hidden">
+<button class="px-3 py-1 text-white hover:bg-white/20 transition-colors">-</button>
+<span class="px-4 py-1 text-white font-body-md text-body-md border-x border-white/20 bg-transparent">1</span>
+<button class="px-3 py-1 text-white hover:bg-white/20 transition-colors">+</button>
+</div>
+<button class="text-white/50 hover:text-white transition-colors text-body-md font-body-md underline underline-offset-4 decoration-white/30 hover:decoration-white">Remove</button>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex flex-col sm:flex-row gap-6 bg-black/20 p-4 rounded-2xl border border-white/10">
+<div class="w-full sm:w-32 h-32 bg-white/10 shrink-0 relative overflow-hidden rounded-xl">
+<img alt="Product Image" class="w-full h-full object-cover" data-alt="A sophisticated flat lay photograph of premium sportswear accessories arranged symmetrically on a dark, textured slate surface. Dramatic, moody directional lighting casts sharp, elegant shadows, highlighting the gold metallic accents on the dark fabric. The color palette is strictly deep charcoal, rich black, and vibrant gold details. The overall aesthetic screams high-end editorial luxury and modern African football culture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2Wvyyv1zDVI34TI76UD4IoH6DAWX30WfuCb3jdCsP7C-t6YI2QVcZKY8MFaib6NlyqM9CxC_oK1Ed2-2iiPyGK4SfL3GZ_IrM226UlN8oD1aYn2M1OqbXTkOlGGWWkxcpRkvaTFbOLFFSlRm3h-u6UsrNzuqfGUghUFAyRLNDtULUq34NVRdCfPCOIpK0AbvI6WzxmSK4vjI2C_YjPoCYrDxOa95fhX5uTXtK-S0-SGqHYbKPERbteremGJQpk7ZBD7e6H6eCpPA"/>
+</div>
+<div class="flex flex-col flex-grow justify-between py-1">
+<div class="flex justify-between items-start gap-4">
+<div>
+<h3 class="font-body-lg text-body-lg text-white font-bold mb-1">Digital: Matchday Pre-sets</h3>
+<span class="inline-block bg-white/20 text-white border border-white/30 px-3 py-1 rounded-full font-label-caps text-label-caps mb-2">Digital Delivery</span>
+<p class="text-white/70 text-body-md font-body-md mb-2">Format: Lightroom .XMP</p>
+</div>
+<p class="font-body-lg text-body-lg text-white font-bold whitespace-nowrap">$45.00</p>
+</div>
+<div class="flex justify-between items-end mt-4">
+<div class="flex items-center opacity-50 cursor-not-allowed bg-white/5 border border-white/10 rounded-full overflow-hidden" title="Digital items cannot have multiple quantities">
+<button class="px-3 py-1 text-white/50" disabled="">-</button>
+<span class="px-4 py-1 text-white/50 font-body-md text-body-md border-x border-white/10 bg-transparent">1</span>
+<button class="px-3 py-1 text-white/50" disabled="">+</button>
+</div>
+<button class="text-white/50 hover:text-white transition-colors text-body-md font-body-md underline underline-offset-4 decoration-white/30 hover:decoration-white">Remove</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Order Summary Sidebar -->
+<div class="lg:col-span-4">
+<div class="bg-black/20 p-6 rounded-2xl border border-white/10 sticky top-[120px]">
+<h2 class="font-headline-md text-headline-md text-white mb-6 border-b border-white/10 pb-4">Summary</h2>
+<div class="space-y-4 mb-6 font-body-md text-body-md">
+<div class="flex justify-between text-white/70">
+<span>Subtotal</span>
+<span class="text-white" data-cart-subtotal>$165.00</span>
+</div>
+<div class="flex justify-between text-white/70">
+<span>Shipping</span>
+<span class="text-white">Calculated at next step</span>
+</div>
+<div class="flex justify-between text-white/70">
+<span>Taxes</span>
+<span class="text-white">Calculated by Shopify</span>
+</div>
+</div>
+<div class="flex justify-between items-end border-t border-white/10 pt-6 mb-8">
+<span class="font-body-lg text-body-lg text-white font-bold">Total</span>
+<div class="text-right">
+<span class="text-white/70 font-label-caps text-label-caps mr-2">USD</span>
+<span class="font-headline-md text-headline-md text-white tracking-tight" data-cart-total>$179.85</span>
+</div>
+</div>
+<button class="w-full bg-white text-[#6a081d] font-bold font-label-caps text-label-caps py-4 px-6 rounded-full hover:bg-gray-100 transition-colors flex justify-center items-center gap-2 mb-6" data-checkout>
+                        Proceed to Checkout
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<!-- Trust & Info Badges -->
+<div class="space-y-4 pt-4 border-t border-white/10">
+<div class="flex items-center gap-3 text-white/70 text-sm font-body-md">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">lock</span>
+<span>Secure SSL encrypted payment via Shopify</span>
+</div>
+<div class="flex items-center gap-3 text-white/70 text-sm font-body-md">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">info</span>
+<span>Digital products will be delivered instantly via email.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-black/20 w-full mt-auto border-t border-white/10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-12 max-w-container-max mx-auto">
+<div class="md:col-span-1 mb-6 md:mb-0">
+<span class="font-headline-md text-headline-md text-white block mb-4">Deeply Africa Shop</span>
+<p class="font-body-md text-body-md text-white/70">© 2024 Deeply Africa. Premium Heritage Sportswear.</p>
+</div>
+<!-- Link columns based on JSON links array -->
+<div class="flex flex-col gap-3">
+<a class="font-body-md text-body-md text-white/70 hover:text-white transition-colors cursor-pointer" href="#">Support</a>
+<a class="font-body-md text-body-md text-white/70 hover:text-white transition-colors cursor-pointer" href="#">Legal</a>
+</div>
+<div class="flex flex-col gap-3">
+<a class="font-body-md text-body-md text-white/70 hover:text-white transition-colors cursor-pointer" href="#">Shipping</a>
+<a class="font-body-md text-body-md text-white/70 hover:text-white transition-colors cursor-pointer" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+<script src="js/config.js"></script>
+<script src="js/shopify.js"></script>
+<script src="js/main.js"></script>
+<script src="js/cart.js"></script>
+</body></html>

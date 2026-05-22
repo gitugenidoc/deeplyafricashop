@@ -1,0 +1,222 @@
+[
+  {
+    "code": "MAR",
+    "name": "Morocco",
+    "slug": "morocco",
+    "colors": ["#c1272d", "#006233"],
+    "shortIntro": "Moroccan football moves between street invention, sharp tactical detail and the roar of cities that treat match night as a shared ceremony.",
+    "afconHistory": "Morocco won the African title in 1976 and has remained a constant AFCON reference through generations of technical teams and demanding supporters.",
+    "worldCupHistory": "Morocco became the first African men's side to reach a World Cup semi-final in 2022 after earlier landmark campaigns including the 1986 round of 16.",
+    "iconicMoments": ["The 1976 continental title", "The 1986 World Cup group win", "The 2022 run past Spain and Portugal"],
+    "legends": ["Badou Zaki", "Noureddine Naybet", "Ahmed Faras", "Mustapha Hadji", "Achraf Hakimi"],
+    "quiz": [
+      {"question": "Which year brought Morocco its AFCON title?", "options": ["1976", "1982", "1998", "2012"], "answer": "1976"},
+      {"question": "What nickname is widely used for Morocco's national team?", "options": ["Atlas Lions", "Desert Foxes", "Super Eagles", "Black Stars"], "answer": "Atlas Lions"},
+      {"question": "Which 2022 knockout opponent did Morocco beat on penalties?", "options": ["Spain", "Brazil", "Croatia", "Japan"], "answer": "Spain"},
+      {"question": "Which stage did Morocco reach at the 1986 World Cup?", "options": ["Round of 16", "Final", "Semi-final", "Did not qualify"], "answer": "Round of 16"},
+      {"question": "Which defender captained major Morocco eras?", "options": ["Noureddine Naybet", "Roger Milla", "Jay-Jay Okocha", "Hossam Hassan"], "answer": "Noureddine Naybet"}
+    ],
+    "badgeName": "Atlas Pulse Badge",
+    "wallpaperUrl": "assets/countries/morocco-wallpaper-placeholder.png",
+    "posterUrl": "assets/countries/morocco-poster-placeholder.png",
+    "discountCodePlaceholder": "MAR-MERCH-TBA"
+  },
+  {
+    "code": "SEN",
+    "name": "Senegal",
+    "slug": "senegal",
+    "colors": ["#00853f", "#fdef42", "#e31b23"],
+    "shortIntro": "Senegalese football balances Dakar rhythm, fierce pressing and the calm confidence of a nation that keeps producing leaders for the biggest stages.",
+    "afconHistory": "After near misses, Senegal lifted its first AFCON trophy in 2021, a title that crowned years of consistency and deep tournament squads.",
+    "worldCupHistory": "Senegal announced itself globally by defeating defending champion France in 2002 and reaching the quarter-finals in its debut World Cup.",
+    "iconicMoments": ["The 2002 win over France", "The 2002 World Cup quarter-final", "The 2021 AFCON final shootout"],
+    "legends": ["El Hadji Diouf", "Sadio Mane", "Kalidou Koulibaly", "Aliou Cisse", "Henri Camara"],
+    "quiz": [
+      {"question": "Senegal won its first AFCON title in which edition?", "options": ["2021", "1996", "2004", "2010"], "answer": "2021"},
+      {"question": "Which team did Senegal beat in the 2002 World Cup opener?", "options": ["France", "Argentina", "Germany", "Mexico"], "answer": "France"},
+      {"question": "What World Cup stage did Senegal reach in 2002?", "options": ["Quarter-final", "Final", "Group stage only", "Semi-final"], "answer": "Quarter-final"},
+      {"question": "Which forward scored Senegal's winning AFCON final penalty in 2021?", "options": ["Sadio Mane", "Didier Drogba", "Riyad Mahrez", "Abedi Pele"], "answer": "Sadio Mane"},
+      {"question": "Aliou Cisse served Senegal as player and what later role?", "options": ["Coach", "Referee", "Club owner", "Commentator only"], "answer": "Coach"}
+    ],
+    "badgeName": "Teranga Tempo Badge",
+    "wallpaperUrl": "assets/countries/senegal-wallpaper-placeholder.png",
+    "posterUrl": "assets/countries/senegal-poster-placeholder.png",
+    "discountCodePlaceholder": "SEN-MERCH-TBA"
+  },
+  {
+    "code": "NGA",
+    "name": "Nigeria",
+    "slug": "nigeria",
+    "colors": ["#008751", "#ffffff"],
+    "shortIntro": "Nigeria brings expressive attackers, unforgettable shirts and a national football conversation that never loses its appetite for flair.",
+    "afconHistory": "Nigeria has won AFCON three times and has built one of the competition's deepest records of podium finishes and tournament drama.",
+    "worldCupHistory": "The Super Eagles reached the World Cup round of 16 in 1994, 1998 and 2014, turning pace and confidence into a global identity.",
+    "iconicMoments": ["The 1994 AFCON title", "The 1994 World Cup debut surge", "The Olympic football gold of 1996"],
+    "legends": ["Rashidi Yekini", "Jay-Jay Okocha", "Nwankwo Kanu", "Stephen Keshi", "Asisat Oshoala"],
+    "quiz": [
+      {"question": "What nickname belongs to Nigeria's men's national team?", "options": ["Super Eagles", "Indomitable Lions", "Bafana Bafana", "Pharaohs"], "answer": "Super Eagles"},
+      {"question": "How many AFCON titles are noted in this pack for Nigeria?", "options": ["3", "1", "5", "0"], "answer": "3"},
+      {"question": "Which Nigerian striker is linked to the famous 1994 World Cup celebration?", "options": ["Rashidi Yekini", "Sadio Mane", "Hossam Hassan", "Lakhdar Belloumi"], "answer": "Rashidi Yekini"},
+      {"question": "Nigeria won Olympic men's football gold in which year?", "options": ["1996", "1984", "2008", "2020"], "answer": "1996"},
+      {"question": "Which playmaker is known as Jay-Jay?", "options": ["Okocha", "Kanu", "Keshi", "Finidi"], "answer": "Okocha"}
+    ],
+    "badgeName": "Eagle Flux Badge",
+    "wallpaperUrl": "assets/countries/nigeria-wallpaper-placeholder.png",
+    "posterUrl": "assets/countries/nigeria-poster-placeholder.png",
+    "discountCodePlaceholder": "NGA-MERCH-TBA"
+  },
+  {
+    "code": "EGY",
+    "name": "Egypt",
+    "slug": "egypt",
+    "colors": ["#ce1126", "#ffffff", "#000000"],
+    "shortIntro": "Egyptian football carries stadium theatre, technical craft and a history that stretches through the earliest chapters of the African game.",
+    "afconHistory": "Egypt is AFCON's most decorated nation, with eras of dominance including the historic three-title run from 2006 to 2010.",
+    "worldCupHistory": "Egypt returned to the World Cup in 2018 after earlier appearances in 1934 and 1990, each qualification carrying enormous national weight.",
+    "iconicMoments": ["The 2006-2010 AFCON three-peat", "The 1990 World Cup return", "Mohamed Salah's qualifying penalty for 2018"],
+    "legends": ["Mahmoud El Khatib", "Hossam Hassan", "Essam El Hadary", "Mohamed Aboutrika", "Mohamed Salah"],
+    "quiz": [
+      {"question": "Which nation has the most AFCON titles?", "options": ["Egypt", "Ghana", "South Africa", "Tunisia"], "answer": "Egypt"},
+      {"question": "Egypt won three consecutive AFCON editions ending in which year?", "options": ["2010", "1998", "2021", "1978"], "answer": "2010"},
+      {"question": "Which goalkeeper is an Egypt legend in this pack?", "options": ["Essam El Hadary", "Badou Zaki", "Thomas N'Kono", "Joseph-Antoine Bell"], "answer": "Essam El Hadary"},
+      {"question": "Egypt qualified for the 2018 World Cup with a decisive penalty by whom?", "options": ["Mohamed Salah", "Rabah Madjer", "Didier Drogba", "Yaya Toure"], "answer": "Mohamed Salah"},
+      {"question": "Egypt's 1990 World Cup appearance came in which country?", "options": ["Italy", "Mexico", "South Africa", "Qatar"], "answer": "Italy"}
+    ],
+    "badgeName": "Nile Match Badge",
+    "wallpaperUrl": "assets/countries/egypt-wallpaper-placeholder.png",
+    "posterUrl": "assets/countries/egypt-poster-placeholder.png",
+    "discountCodePlaceholder": "EGY-MERCH-TBA"
+  },
+  {
+    "code": "CMR",
+    "name": "Cameroon",
+    "slug": "cameroon",
+    "colors": ["#007a5e", "#ce1126", "#fcd116"],
+    "shortIntro": "Cameroon football is built on force, swagger and the belief that an African side can seize the world's attention at any moment.",
+    "afconHistory": "Cameroon has claimed five AFCON titles, pairing powerful tournament teams with generations of famous forwards and goalkeepers.",
+    "worldCupHistory": "The Indomitable Lions reached the 1990 World Cup quarter-finals, a breakthrough run led by unforgettable attacking moments.",
+    "iconicMoments": ["Roger Milla at Italia 90", "The 2000 AFCON title", "The 2017 AFCON comeback final"],
+    "legends": ["Roger Milla", "Samuel Eto'o", "Thomas N'Kono", "Rigobert Song", "Theophile Abega"],
+    "quiz": [
+      {"question": "Cameroon reached a World Cup quarter-final in which year?", "options": ["1990", "1974", "2018", "2022"], "answer": "1990"},
+      {"question": "What is Cameroon's team nickname?", "options": ["Indomitable Lions", "Atlas Lions", "Elephants", "Fennecs"], "answer": "Indomitable Lions"},
+      {"question": "How many AFCON titles are noted for Cameroon?", "options": ["5", "2", "1", "7"], "answer": "5"},
+      {"question": "Which striker is a Cameroon goal legend?", "options": ["Samuel Eto'o", "George Weah", "Rashidi Yekini", "Mustapha Hadji"], "answer": "Samuel Eto'o"},
+      {"question": "Which veteran became a 1990 global icon?", "options": ["Roger Milla", "Abedi Pele", "Lucas Radebe", "Rabah Madjer"], "answer": "Roger Milla"}
+    ],
+    "badgeName": "Lion Roar Badge",
+    "wallpaperUrl": "assets/countries/cameroon-wallpaper-placeholder.png",
+    "posterUrl": "assets/countries/cameroon-poster-placeholder.png",
+    "discountCodePlaceholder": "CMR-MERCH-TBA"
+  },
+  {
+    "code": "CIV",
+    "name": "Ivory Coast",
+    "slug": "ivory-coast",
+    "colors": ["#f77f00", "#ffffff", "#009e60"],
+    "shortIntro": "Ivory Coast football blends street confidence, imposing athletes and a golden-generation memory that still shapes every orange wave.",
+    "afconHistory": "The Elephants have won AFCON three times, with triumphs in 1992, 2015 and a dramatic home-title campaign in 2023.",
+    "worldCupHistory": "Ivory Coast qualified for three consecutive World Cups from 2006 to 2014, arriving each time with heavyweight attacking talent.",
+    "iconicMoments": ["The 1992 AFCON shootout", "The 2015 AFCON title", "The 2023 home comeback story"],
+    "legends": ["Didier Drogba", "Yaya Toure", "Kolo Toure", "Laurent Pokou", "Didier Zokora"],
+    "quiz": [
+      {"question": "Ivory Coast's national side is nicknamed what?", "options": ["Elephants", "Black Stars", "Pharaohs", "Carthage Eagles"], "answer": "Elephants"},
+      {"question": "Which striker captained the golden generation?", "options": ["Didier Drogba", "Roger Milla", "Sadio Mane", "Riyad Mahrez"], "answer": "Didier Drogba"},
+      {"question": "Which AFCON was a recent home-title campaign?", "options": ["2023", "2002", "1988", "1976"], "answer": "2023"},
+      {"question": "Ivory Coast qualified for consecutive World Cups starting in?", "options": ["2006", "1982", "1990", "2022"], "answer": "2006"},
+      {"question": "Which midfielder is a Ivory Coast legend?", "options": ["Yaya Toure", "Jay-Jay Okocha", "Aboutrika", "Lakhdar Belloumi"], "answer": "Yaya Toure"}
+    ],
+    "badgeName": "Elephant Current Badge",
+    "wallpaperUrl": "assets/countries/ivory-coast-wallpaper-placeholder.png",
+    "posterUrl": "assets/countries/ivory-coast-poster-placeholder.png",
+    "discountCodePlaceholder": "CIV-MERCH-TBA"
+  },
+  {
+    "code": "GHA",
+    "name": "Ghana",
+    "slug": "ghana",
+    "colors": ["#ce1126", "#fcd116", "#006b3f"],
+    "shortIntro": "Ghana football carries academy craft, fierce tournament memory and the proud expectation attached to the Black Stars name.",
+    "afconHistory": "Ghana won four AFCON titles and helped define the competition's early standards with disciplined and expressive teams.",
+    "worldCupHistory": "Ghana reached the World Cup quarter-finals in 2010, coming one kick away from an African semi-final.",
+    "iconicMoments": ["Four continental crowns", "The 2006 World Cup debut", "The 2010 quarter-final drama"],
+    "legends": ["Abedi Pele", "Asamoah Gyan", "Michael Essien", "Stephen Appiah", "Andre Ayew"],
+    "quiz": [
+      {"question": "What nickname belongs to Ghana?", "options": ["Black Stars", "Super Eagles", "Bafana Bafana", "Atlas Lions"], "answer": "Black Stars"},
+      {"question": "Ghana reached the World Cup quarter-finals in which year?", "options": ["2010", "1994", "2018", "1970"], "answer": "2010"},
+      {"question": "How many AFCON titles are noted for Ghana?", "options": ["4", "1", "0", "6"], "answer": "4"},
+      {"question": "Which Ghana legend is named Abedi?", "options": ["Pele", "Milla", "Madjer", "Zaki"], "answer": "Pele"},
+      {"question": "Which striker scored Ghana World Cup goals across eras?", "options": ["Asamoah Gyan", "Samuel Eto'o", "Hossam Hassan", "Rashidi Yekini"], "answer": "Asamoah Gyan"}
+    ],
+    "badgeName": "Star Forge Badge",
+    "wallpaperUrl": "assets/countries/ghana-wallpaper-placeholder.png",
+    "posterUrl": "assets/countries/ghana-poster-placeholder.png",
+    "discountCodePlaceholder": "GHA-MERCH-TBA"
+  },
+  {
+    "code": "ALG",
+    "name": "Algeria",
+    "slug": "algeria",
+    "colors": ["#006233", "#ffffff", "#d21034"],
+    "shortIntro": "Algerian football joins technical left-footed poetry, defiant tournament energy and supporters who turn each touch into emotion.",
+    "afconHistory": "Algeria won AFCON in 1990 at home and again in 2019 with a composed, intense side that controlled a demanding tournament.",
+    "worldCupHistory": "Algeria shocked West Germany in 1982 and pushed Germany to extra time in the 2014 round of 16.",
+    "iconicMoments": ["The 1982 World Cup upset", "The 1990 AFCON title", "The 2019 AFCON final winner"],
+    "legends": ["Rabah Madjer", "Lakhdar Belloumi", "Riyad Mahrez", "Islam Slimani", "Djamel Menad"],
+    "quiz": [
+      {"question": "What nickname is associated with Algeria?", "options": ["Fennecs", "Elephants", "Pharaohs", "Black Stars"], "answer": "Fennecs"},
+      {"question": "Algeria won AFCON in 2019 and which earlier year?", "options": ["1990", "1976", "2006", "2021"], "answer": "1990"},
+      {"question": "Which opponent did Algeria famously beat at the 1982 World Cup?", "options": ["West Germany", "Brazil", "Argentina", "Spain"], "answer": "West Germany"},
+      {"question": "Which winger captained the 2019 era?", "options": ["Riyad Mahrez", "Didier Drogba", "Hakimi", "Essien"], "answer": "Riyad Mahrez"},
+      {"question": "Which Algerian forward is known for a famous European Cup backheel?", "options": ["Rabah Madjer", "Roger Milla", "Jay-Jay Okocha", "Hossam Hassan"], "answer": "Rabah Madjer"}
+    ],
+    "badgeName": "Fennec Line Badge",
+    "wallpaperUrl": "assets/countries/algeria-wallpaper-placeholder.png",
+    "posterUrl": "assets/countries/algeria-poster-placeholder.png",
+    "discountCodePlaceholder": "ALG-MERCH-TBA"
+  },
+  {
+    "code": "TUN",
+    "name": "Tunisia",
+    "slug": "tunisia",
+    "colors": ["#e70013", "#ffffff"],
+    "shortIntro": "Tunisia brings compact intelligence, intense derbies and a tournament temperament shaped by patience and collective structure.",
+    "afconHistory": "Tunisia won AFCON in 2004 on home soil and has remained one of the continent's most frequent tournament qualifiers.",
+    "worldCupHistory": "Tunisia earned Africa's first World Cup match win in 1978 and has kept returning to test organized football against elite sides.",
+    "iconicMoments": ["The 1978 win over Mexico", "The 2004 AFCON title", "The 2022 win over France"],
+    "legends": ["Tarak Dhiab", "Radhi Jaidi", "Wahbi Khazri", "Youssef Msakni", "Sadok Sassi"],
+    "quiz": [
+      {"question": "Tunisia won AFCON in which year?", "options": ["2004", "1992", "1976", "2019"], "answer": "2004"},
+      {"question": "Which World Cup year gave Tunisia a historic win over Mexico?", "options": ["1978", "1998", "2010", "2022"], "answer": "1978"},
+      {"question": "What bird appears in Tunisia's team nickname?", "options": ["Eagle", "Falcon", "Crane", "Swan"], "answer": "Eagle"},
+      {"question": "Which 2022 opponent did Tunisia beat?", "options": ["France", "Brazil", "Portugal", "Morocco"], "answer": "France"},
+      {"question": "Which creative Tunisian is a pack legend?", "options": ["Tarak Dhiab", "Abedi Pele", "Badou Zaki", "Yaya Toure"], "answer": "Tarak Dhiab"}
+    ],
+    "badgeName": "Carthage Flight Badge",
+    "wallpaperUrl": "assets/countries/tunisia-wallpaper-placeholder.png",
+    "posterUrl": "assets/countries/tunisia-poster-placeholder.png",
+    "discountCodePlaceholder": "TUN-MERCH-TBA"
+  },
+  {
+    "code": "RSA",
+    "name": "South Africa",
+    "slug": "south-africa",
+    "colors": ["#007a4d", "#ffb81c", "#de3831"],
+    "shortIntro": "South African football mixes township technique, dance-like confidence and the huge emotional weight of football in a changing nation.",
+    "afconHistory": "South Africa won AFCON in 1996 on home soil, a defining moment for Bafana Bafana and the country's sporting imagination.",
+    "worldCupHistory": "South Africa appeared at the World Cup in 1998 and 2002 before hosting the 2010 tournament and scoring its opening goal.",
+    "iconicMoments": ["The 1996 AFCON title", "Siphiwe Tshabalala's 2010 opener", "The 2023 AFCON bronze run"],
+    "legends": ["Lucas Radebe", "Doctor Khumalo", "Benni McCarthy", "Siphiwe Tshabalala", "Neil Tovey"],
+    "quiz": [
+      {"question": "South Africa won AFCON in which year?", "options": ["1996", "2004", "2015", "1978"], "answer": "1996"},
+      {"question": "What nickname belongs to South Africa's men's side?", "options": ["Bafana Bafana", "Black Stars", "Fennecs", "Atlas Lions"], "answer": "Bafana Bafana"},
+      {"question": "Who scored the 2010 World Cup opening goal for South Africa?", "options": ["Siphiwe Tshabalala", "Benni McCarthy", "Lucas Radebe", "Doctor Khumalo"], "answer": "Siphiwe Tshabalala"},
+      {"question": "Which World Cup did South Africa host?", "options": ["2010", "1994", "2018", "2026"], "answer": "2010"},
+      {"question": "Which defender captained club and country with distinction?", "options": ["Lucas Radebe", "Roger Milla", "Rabah Madjer", "Hossam Hassan"], "answer": "Lucas Radebe"}
+    ],
+    "badgeName": "Bafana Signal Badge",
+    "wallpaperUrl": "assets/countries/south-africa-wallpaper-placeholder.png",
+    "posterUrl": "assets/countries/south-africa-poster-placeholder.png",
+    "discountCodePlaceholder": "RSA-MERCH-TBA"
+  }
+]

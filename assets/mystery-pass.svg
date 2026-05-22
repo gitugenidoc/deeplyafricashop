@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 960" fill="none">
+  <defs><linearGradient id="a" x1="55" y1="19" x2="648" y2="930" gradientUnits="userSpaceOnUse"><stop stop-color="#0A0A0A"/><stop offset=".5" stop-color="#17351F"/><stop offset="1" stop-color="#4A0314"/></linearGradient><pattern id="p" width="90" height="90" patternUnits="userSpaceOnUse"><path d="M0 45h90M45 0v90M0 0l90 90M90 0 0 90" stroke="#FFE088" stroke-opacity=".16"/></pattern></defs>
+  <rect width="720" height="960" rx="54" fill="url(#a)"/>
+  <rect x="28" y="28" width="664" height="904" rx="38" fill="url(#p)" stroke="#fff" stroke-opacity=".18"/>
+  <circle cx="360" cy="284" r="116" stroke="#FFE088" stroke-width="4"/>
+  <circle cx="360" cy="284" r="76" stroke="#86D89D" stroke-width="2"/>
+  <path d="M292 284h136M360 216v136M310 234l100 100M410 234 310 334" stroke="#FFE088" stroke-width="3"/>
+  <text x="360" y="510" fill="#FFE088" font-family="Georgia, serif" font-size="62" text-anchor="middle">Mystery</text>
+  <text x="360" y="584" fill="#fff" font-family="Georgia, serif" font-size="62" text-anchor="middle">Country Pass</text>
+  <text x="360" y="654" fill="#fff" fill-opacity=".72" font-family="Arial, sans-serif" font-size="22" text-anchor="middle">DIGITAL FOOTBALL PASSPORT</text>
+  <path d="M104 784h512" stroke="#fff" stroke-opacity=".18"/>
+  <text x="104" y="836" fill="#fff" fill-opacity=".72" font-family="Arial, sans-serif" font-size="20">DROP 001</text>
+  <text x="616" y="836" fill="#FFE088" font-family="Arial, sans-serif" font-size="20" text-anchor="end">SECURE REVEAL</text>
+</svg>

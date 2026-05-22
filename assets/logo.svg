@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 96" fill="none">
+  <rect width="360" height="96" rx="8" fill="#131313"/>
+  <circle cx="44" cy="48" r="26" stroke="#FFE088" stroke-width="4"/>
+  <path d="M31 48h26M44 35v26M27 30l34 36M61 30 27 66" stroke="#86D89D" stroke-width="2"/>
+  <text x="88" y="58" fill="#fff" font-family="Georgia, serif" font-size="30">Deeply Africa</text>
+</svg>

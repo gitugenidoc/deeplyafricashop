@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Deeply Africa - Reveal Your Nation</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&amp;family=Libre+Caslon+Text:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#353534",
+                        "on-tertiary-fixed": "#410004",
+                        "surface-container": "#201f1f",
+                        "inverse-on-surface": "#313030",
+                        "surface-bright": "#3a3939",
+                        "inverse-surface": "#e5e2e1",
+                        "secondary": "#e9c349",
+                        "on-surface": "#e5e2e1",
+                        "primary-fixed": "#a1f5b7",
+                        "on-primary-container": "#89dba0",
+                        "error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#574500",
+                        "secondary-fixed-dim": "#e9c349",
+                        "surface-dim": "#131313",
+                        "on-secondary": "#3c2f00",
+                        "secondary-fixed": "#ffe088",
+                        "on-background": "#e5e2e1",
+                        "tertiary": "#ffb3ae",
+                        "primary-fixed-dim": "#86d89d",
+                        "primary-container": "#006233",
+                        "surface-container-high": "#2a2a2a",
+                        "tertiary-container": "#a9121f",
+                        "on-primary-fixed-variant": "#00522a",
+                        "on-primary-fixed": "#00210d",
+                        "on-primary": "#00391b",
+                        "surface-container-lowest": "#0e0e0e",
+                        "outline": "#899389",
+                        "surface-tint": "#86d89d",
+                        "secondary-container": "#af8d11",
+                        "surface-variant": "#353534",
+                        "on-error": "#690005",
+                        "on-secondary-container": "#342800",
+                        "on-tertiary": "#68000b",
+                        "on-tertiary-fixed-variant": "#930015",
+                        "background": "#131313",
+                        "primary": "#86d89d",
+                        "tertiary-fixed-dim": "#ffb3ae",
+                        "outline-variant": "#3f4940",
+                        "surface-container-low": "#1c1b1b",
+                        "surface": "#131313",
+                        "tertiary-fixed": "#ffdad7",
+                        "inverse-primary": "#146c3c",
+                        "on-surface-variant": "#bfc9be",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary-container": "#ffb8b2",
+                        "on-secondary-fixed": "#241a00",
+                        "error": "#ffb4ab"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "margin-desktop": "64px",
+                        "base": "8px",
+                        "gutter": "24px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Hanken Grotesk"],
+                        "body-md": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-md": ["Libre Caslon Text"],
+                        "headline-display": ["Libre Caslon Text"],
+                        "headline-lg": ["Libre Caslon Text"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "headline-display": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { 
+            background-color: #900B22; 
+            background-image: radial-gradient(circle at center, #B50D2D 0%, #680011 100%);
+            color: #ffffff; 
+            background-attachment: fixed;
+        }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .icon-fill { font-variation-settings: 'FILL' 1; }
+        
+        /* Custom Animations */
+        @keyframes subtlePulse {
+            0% { opacity: 0.8; transform: scale(0.98); }
+            50% { opacity: 1; transform: scale(1.02); }
+            100% { opacity: 0.8; transform: scale(0.98); }
+        }
+        .animate-subtle-pulse { animation: subtlePulse 3s infinite ease-in-out; }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in { animation: fadeIn 1s cubic-bezier(0.4, 0, 0.2, 1) forwards; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col font-body-md overflow-x-hidden selection:bg-white/20 selection:text-white" data-reveal-page>
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-transparent flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 max-w-container-max mx-auto left-0 right-0">
+<div class="font-headline-md text-headline-md text-white tracking-tight flex items-center gap-2">
+<span class="material-symbols-outlined icon-fill">sports_soccer</span>
+    Deeply Africa
+</div>
+<div class="hidden md:flex items-center gap-8 bg-white/10 backdrop-blur-md px-6 py-2 rounded-full border border-white/20">
+<a class="font-label-caps text-label-caps text-white hover:text-secondary-fixed transition-colors duration-300" href="#">Collections</a>
+<a class="font-label-caps text-label-caps text-white/70 hover:text-secondary-fixed transition-colors duration-300" href="#">Kits</a>
+<a class="font-label-caps text-label-caps text-white/70 hover:text-secondary-fixed transition-colors duration-300" href="#">Bundles</a>
+<a class="font-label-caps text-label-caps text-white/70 hover:text-secondary-fixed transition-colors duration-300" href="#">FAQ</a>
+</div>
+<div class="flex items-center gap-4 text-white">
+<div class="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center cursor-pointer hover:bg-white/20 transition-colors">
+<span class="material-symbols-outlined text-[20px]">person</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-white text-[#900B22] flex items-center justify-center cursor-pointer hover:bg-white/90 transition-colors relative">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+<span class="absolute -top-1 -right-1 w-4 h-4 bg-secondary-fixed text-[#900B22] text-[10px] font-bold rounded-full flex items-center justify-center">3</span>
+</div>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="flex-grow flex flex-col items-center justify-center pt-32 pb-24 px-margin-mobile md:px-margin-desktop relative">
+<!-- Loading State -->
+<div class="z-10 flex flex-col items-center justify-center min-h-[614px]" id="loadingState" data-loading>
+<div class="w-24 h-24 rounded-full border-2 border-white/20 border-t-white animate-spin mb-8"></div>
+<h1 class="font-headline-md text-headline-md text-white animate-subtle-pulse text-center">Finding your African football nation...</h1>
+<p class="font-label-caps text-label-caps text-[#ffe088] mt-4 tracking-widest">ANALYZING PROFILE</p>
+</div>
+<p class="z-10 text-white/80 text-center" data-reveal-message hidden></p>
+<!-- Reveal State (Hidden initially) -->
+<div class="z-10 w-full max-w-4xl hidden opacity-0 flex-col gap-gutter" id="revealState" data-reveal-pack>
+<!-- The Passport Card -->
+<div class="bg-white/5 backdrop-blur-xl rounded-3xl border border-white/20 overflow-hidden relative shadow-2xl">
+<!-- Gold Accent Top -->
+<div class="h-1 w-full bg-gradient-to-r from-[#ffe088]/0 via-[#ffe088] to-[#ffe088]/0"></div>
+<div class="p-8 md:p-12 flex flex-col md:flex-row gap-12 items-center">
+<!-- Left: Badge -->
+<div class="w-48 h-48 md:w-64 md:h-64 rounded-full bg-black/20 border border-white/10 flex items-center justify-center p-4 relative shrink-0 shadow-[0_0_40px_rgba(255,224,136,0.1)]">
+<!-- Abstract badge placeholder image -->
+<img alt="National Badge" class="w-full h-full object-cover rounded-full opacity-90 mix-blend-overlay" data-alt="A highly detailed, premium digital illustration of a fictional football crest or national badge for an African team. The design incorporates intricate gold geometric motifs, deep rich greens, and striking reds, presented on a dark, textured background. Lighting is dramatic and cinematic, creating a sense of heritage and luxury consistent with a high-end sports membership aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGvF2LkCa6g_ymJeW7ng9zlB0LaLLdRoRQ20yZqo-fnK724ZTd2LdA2jsMnXD6KZM-5XKyKFlIqvtBOa3vNnoU4_zAwdrtPqr7YHocfl235E4Ew7gDitlRZ7D9tI74ZscvKPN-O-vIi21O--HaGi3Wi7b2xSyGfdLmE_-4zEKGgvSBx7DenX-pQNGhNk8WV8yhEXrqRHrZRcsbZuZaSwVd1hCgF_7TG2Xr_F_DvixQVxUuCYx5O0Uy2P-LFqO98hVVvcaM6qDlmZA"/>
+<div class="absolute inset-0 rounded-full ring-1 ring-white/30 pointer-events-none"></div>
+</div>
+<!-- Right: Info -->
+<div class="flex flex-col flex-grow text-center md:text-left">
+<span class="font-label-caps text-label-caps text-[#ffe088] tracking-widest mb-2 flex items-center justify-center md:justify-start gap-2">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+                            OFFICIAL DESIGNATION
+                        </span>
+<h2 class="font-headline-display text-headline-lg-mobile md:text-headline-display text-white uppercase tracking-tight mb-4 drop-shadow-lg">Morocco</h2>
+<p class="font-body-md text-body-md text-white/80 max-w-lg mb-8 leading-relaxed">
+                            A nation that weaves tactical discipline with breathtaking flair. The Atlas Lions represent a rich heritage of football, commanding the pitch with relentless energy and a spirit that unites a continent.
+                        </p>
+<!-- History Stats -->
+<div class="grid grid-cols-2 gap-4 border-t border-white/10 pt-6">
+<div>
+<span class="font-label-caps text-label-caps text-white/60 block mb-1">AFCON TITLES</span>
+<span class="font-headline-md text-headline-md text-[#ffe088]">1</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-white/60 block mb-1">WORLD CUP APPS</span>
+<span class="font-headline-md text-headline-md text-white">6</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Legends & Actions Row -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Legends Section -->
+<div class="md:col-span-2 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 p-6 flex flex-col">
+<h3 class="font-label-caps text-label-caps text-[#ffe088] mb-4 border-b border-white/10 pb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">stars</span>
+                        LEGENDARY ICONS
+                    </h3>
+<div class="flex gap-6 overflow-x-auto pb-2 scrollbar-hide">
+<div class="flex flex-col items-center min-w-[80px]">
+<div class="w-16 h-16 rounded-full bg-black/20 border border-white/20 mb-3 shadow-inner"></div>
+<span class="font-body-md text-[12px] text-white/90 text-center font-bold tracking-wide">Zaki</span>
+</div>
+<div class="flex flex-col items-center min-w-[80px]">
+<div class="w-16 h-16 rounded-full bg-black/20 border border-white/20 mb-3 shadow-inner"></div>
+<span class="font-body-md text-[12px] text-white/90 text-center font-bold tracking-wide">Naybet</span>
+</div>
+<div class="flex flex-col items-center min-w-[80px]">
+<div class="w-16 h-16 rounded-full bg-black/20 border border-white/20 mb-3 shadow-inner"></div>
+<span class="font-body-md text-[12px] text-white/90 text-center font-bold tracking-wide">Hakimi</span>
+</div>
+</div>
+</div>
+<!-- Actions Section -->
+<div class="bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 p-6 flex flex-col justify-center gap-4">
+<button class="w-full bg-white text-[#900B22] font-label-caps text-label-caps py-4 rounded-full border border-transparent hover:bg-white/90 transition-all shadow-lg flex items-center justify-center gap-2 tracking-widest">
+<span class="material-symbols-outlined text-[18px]">download</span>
+                        WALLPAPER
+                    </button>
+<button class="w-full bg-transparent text-white font-label-caps text-label-caps py-4 rounded-full border border-white/30 hover:bg-white/10 hover:border-white transition-all flex items-center justify-center gap-2 tracking-widest">
+<span class="material-symbols-outlined text-[18px]">share</span>
+                        SHARE RESULT
+                    </button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-auto border-t border-white/10 grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-12 max-w-container-max mx-auto left-0 right-0 z-50">
+<div class="font-headline-md text-headline-md text-white flex items-center gap-2">
+<span class="material-symbols-outlined icon-fill text-[#ffe088]">sports_soccer</span>
+    Deeply Africa
+</div>
+<div class="col-span-1 md:col-span-3 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+<div class="flex gap-6">
+<a class="font-body-md text-body-md text-white/60 hover:text-white transition-colors cursor-pointer" href="#">Support</a>
+<a class="font-body-md text-body-md text-white/60 hover:text-white transition-colors cursor-pointer" href="#">Legal</a>
+<a class="font-body-md text-body-md text-white/60 hover:text-white transition-colors cursor-pointer" href="#">Shipping</a>
+<a class="font-body-md text-body-md text-white/60 hover:text-white transition-colors cursor-pointer" href="#">Terms of Service</a>
+</div>
+<p class="font-body-md text-body-md text-white/40">© 2024 Deeply Africa. Premium Heritage Sportswear.</p>
+</div>
+</footer>
+<script src="js/config.js"></script>
+<script src="js/shopify.js"></script>
+<script src="js/main.js"></script>
+<script src="js/reveal.js"></script>
+</body></html>
