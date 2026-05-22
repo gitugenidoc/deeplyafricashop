@@ -33,6 +33,8 @@ The committed frontend config targets `https://api-shop.deeplyafrica.com`. Chang
 5. The backend verifies HMAC, assigns a country pack, stores the tokenized reveal, and optionally sends the reveal email.
 6. `reveal.html?token=...` reads `GET /api/reveal/:token`.
 
+Reveal email delivery uses Resend from the API project after `RESEND_API_KEY` and a verified `REVEAL_FROM_EMAIL` are configured.
+
 ## Product rule
 
 Country assignment is a content theme only. Every pass returns the same pack format and value. The sample assets are original placeholders and the country packs do not use official CAF, FIFA, federation, club logos, or player photos.

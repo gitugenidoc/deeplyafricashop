@@ -15,7 +15,8 @@ Copy `.env.example` to `.env`.
 - `SHOPIFY_WEBHOOK_SECRET`: secret used for `X-Shopify-Hmac-Sha256`.
 - `STOREFRONT_ORIGIN`: frontend origin allowed by CORS.
 - `REVEAL_BASE_URL`: public reveal page URL before its token query parameter.
-- `REVEAL_EMAIL_WEBHOOK_URL`: optional email provider bridge. It receives JSON containing recipient, subject, text, order ID, and reveal URL.
+- `RESEND_API_KEY`: required Resend API key for reveal email delivery.
+- `REVEAL_FROM_EMAIL`: verified Resend sender, for example `Deeply Africa Shop <reveal@shop.deeplyafrica.com>`.
 
 ## Run
 

@@ -1,29 +1,31 @@
+const { Resend } = require("resend");
+
+function emailClient() {
+  if (!process.env.RESEND_API_KEY) {
+    throw new Error("RESEND_API_KEY is required for reveal email delivery.");
+  }
+  return new Resend(process.env.RESEND_API_KEY);
+}
+
 async function sendRevealEmail({ to, orderId, revealUrl }) {
   if (!to) {
     console.warn(`Order ${orderId} has no email for reveal delivery.`);
     return { delivered: false };
   }
 
-  const payload = {
-    to,
-    orderId,
-    revealUrl,
-    subject: "Your Deeply Africa Mystery Country Pass reveal",
-    text: `Payment confirmed. Open your secure Deeply Africa reveal link: ${revealUrl}`
-  };
-
-  if (!process.env.REVEAL_EMAIL_WEBHOOK_URL) {
-    console.info(`Reveal email webhook is not configured for order ${orderId}. Reveal URL: ${revealUrl}`);
-    return { delivered: false };
+  if (!process.env.REVEAL_FROM_EMAIL) {
+    throw new Error("REVEAL_FROM_EMAIL is required for reveal email delivery.");
   }
 
-  const response = await fetch(process.env.REVEAL_EMAIL_WEBHOOK_URL, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(payload)
+  const { data, error } = await emailClient().emails.send({
+    from: process.env.REVEAL_FROM_EMAIL,
+    to,
+    subject: "Your Deeply Africa Mystery Country Pass reveal",
+    text: `Payment confirmed. Open your secure Deeply Africa reveal link: ${revealUrl}`,
+    html: `<p>Payment confirmed.</p><p>Open your secure Deeply Africa Mystery Country Pass reveal:</p><p><a href="${revealUrl}">Reveal your African football nation</a></p><p>Order: ${orderId}</p>`
   });
-  if (!response.ok) throw new Error(`Email webhook failed with HTTP ${response.status}.`);
-  return { delivered: true };
+  if (error) throw new Error(`Resend email failed: ${error.message}`);
+  return { delivered: true, id: data.id };
 }
 
 module.exports = { sendRevealEmail };

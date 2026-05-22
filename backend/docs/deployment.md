@@ -18,4 +18,4 @@ Import `backend/` as a separate Vercel project. `api/index.js` exports the Expre
 
 ## Email
 
-The included service calls an optional `REVEAL_EMAIL_WEBHOOK_URL`. Connect that endpoint to an email provider or replace `services/emailService.js` with the approved provider SDK while keeping reveal URLs generated server-side.
+The included service uses Resend from the paid-order webhook. Verify the sender domain in Resend, then set `RESEND_API_KEY` and `REVEAL_FROM_EMAIL` on the API Vercel project so reveal links are generated and emailed server-side.
