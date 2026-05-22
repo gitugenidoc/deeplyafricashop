@@ -4,14 +4,14 @@
 
 - Node.js 20 or newer.
 - A Shopify webhook secret for paid-order verification.
-- A writable `backend/data/orders.json` path for this JSON storage implementation.
+- A Neon Postgres database connected with `DATABASE_URL`.
 
 ## Environment
 
 Copy `.env.example` to `.env`.
 
 - `PORT`: Express port.
-- `DATABASE_URL`: Neon Postgres connection string in Vercel. Without it, local development falls back to `data/orders.json`.
+- `DATABASE_URL`: required Neon Postgres connection string.
 - `SHOPIFY_WEBHOOK_SECRET`: secret used for `X-Shopify-Hmac-Sha256`.
 - `STOREFRONT_ORIGIN`: frontend origin allowed by CORS.
 - `REVEAL_BASE_URL`: public reveal page URL before its token query parameter.
@@ -30,4 +30,4 @@ Health check:
 GET http://localhost:8787/api/health
 ```
 
-Production should set `DATABASE_URL`. The storage service creates the `reveal_orders` table on first use; `docs/schema.sql` is also available for manual setup in the Neon SQL editor.
+The storage service creates the `reveal_orders` table on first use; `docs/schema.sql` is also available for manual setup in the Neon SQL editor.
