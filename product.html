@@ -86,25 +86,25 @@
 <!-- TopNavBar -->
 <nav class="fixed top-0 w-full z-50 bg-transparent border-b border-outline-variant/30">
 <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 max-w-container-max mx-auto">
-<a class="font-headline-md text-headline-md text-primary tracking-tight flex items-center gap-2" href="#">
+<a class="font-headline-md text-headline-md text-primary tracking-tight flex items-center gap-2" href="index.html">
 <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">public</span>
     Deeply Africa
 </a>
 <div class="hidden md:flex gap-gutter items-center bg-surface-container-high rounded-full px-6 py-2 border border-outline-variant/20 backdrop-blur-md">
 <!-- Collections is set as active state based on logical grouping for a special item -->
-<a class="font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1 uppercase" href="#">Collections</a>
-<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300 uppercase" href="#">Kits</a>
-<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300 uppercase" href="#">Bundles</a>
-<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300 uppercase" href="#">FAQ</a>
+<a class="font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1 uppercase" href="products.html">Collections</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300 uppercase" href="product.html">Kits</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300 uppercase" href="#bundles">Bundles</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300 uppercase" href="faq.html">FAQ</a>
 </div>
 <div class="flex gap-4 items-center">
-<button class="bg-surface-container-high border border-outline-variant/20 rounded-full w-10 h-10 flex items-center justify-center text-primary hover:bg-surface-container transition-colors duration-300 backdrop-blur-md">
+<a class="bg-surface-container-high border border-outline-variant/20 rounded-full w-10 h-10 flex items-center justify-center text-primary hover:bg-surface-container transition-colors duration-300 backdrop-blur-md" href="faq.html" aria-label="Support">
 <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 0;">person</span>
-</button>
-<button class="bg-primary text-on-primary-container rounded-full w-10 h-10 flex items-center justify-center hover:bg-primary/90 transition-colors duration-300 relative">
+</a>
+<a class="bg-primary text-on-primary-container rounded-full w-10 h-10 flex items-center justify-center hover:bg-primary/90 transition-colors duration-300 relative" href="cart.html" aria-label="Cart">
 <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 0;">shopping_bag</span>
 <span class="absolute -top-1 -right-1 bg-secondary text-surface-container-highest text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">3</span>
-</button>
+</a>
 </div>
 </div>
 </nav>
@@ -132,7 +132,7 @@
 <div class="lg:col-span-5 flex flex-col gap-8 lg:sticky lg:top-[140px]">
 <div class="space-y-4">
 <div class="flex items-center gap-3">
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps uppercase flex items-center gap-1" href="#">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps uppercase flex items-center gap-1" href="products.html">
 <span class="material-symbols-outlined text-[16px]">chevron_left</span> Back
 </a>
 </div>
@@ -157,9 +157,9 @@
 <p class="font-headline-md text-headline-md text-primary m-0" data-product-price>$45.00</p>
 <div class="flex items-center gap-4 w-full sm:w-auto">
 <div class="flex items-center gap-4 text-primary bg-surface-container-high px-4 py-2 rounded-full border border-outline-variant/20">
-<button class="hover:text-secondary transition-colors"><span class="material-symbols-outlined text-[20px]">remove</span></button>
-<span class="font-body-lg">1</span>
-<button class="hover:text-secondary transition-colors"><span class="material-symbols-outlined text-[20px]">add</span></button>
+<button class="hover:text-secondary transition-colors" data-product-quantity-change="-1" aria-label="Decrease quantity"><span class="material-symbols-outlined text-[20px]">remove</span></button>
+<span class="font-body-lg" data-product-quantity>1</span>
+<button class="hover:text-secondary transition-colors" data-product-quantity-change="1" aria-label="Increase quantity"><span class="material-symbols-outlined text-[20px]">add</span></button>
 </div>
 <button class="bg-primary text-on-primary-container hover:bg-primary/90 transition-colors font-label-caps text-label-caps uppercase py-4 px-8 rounded-full flex-grow sm:flex-grow-0 flex justify-center items-center gap-2 shadow-[0_10px_20px_rgba(0,0,0,0.2)]" data-buy-product>
 <span class="material-symbols-outlined">shopping_cart</span>
@@ -220,7 +220,7 @@
 </div>
 </section>
 <!-- Bundle Options Prominent -->
-<section class="bg-surface-container-lowest/30 py-24 relative overflow-hidden backdrop-blur-sm border-y border-outline-variant/20">
+<section class="bg-surface-container-lowest/30 py-24 relative overflow-hidden backdrop-blur-sm border-y border-outline-variant/20" id="bundles">
 <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
 <div class="text-center mb-16">
 <h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary mb-4">Elevate Your Allocation</h2>
@@ -235,7 +235,7 @@
 <h3 class="font-headline-md text-headline-md text-primary mb-2">The Trio</h3>
 <p class="text-on-surface-variant text-sm mb-8 flex-grow">Guaranteed unique assignments within the bundle.</p>
 <p class="text-primary font-headline-md text-headline-md mb-8">$120.00</p>
-<button class="bg-surface-container-high text-primary hover:bg-white hover:text-on-primary-container transition-colors font-label-caps text-label-caps uppercase py-4 px-6 rounded-full w-full border border-outline-variant/30">Select Bundle</button>
+<a class="bg-surface-container-high text-primary hover:bg-white hover:text-on-primary-container transition-colors font-label-caps text-label-caps uppercase py-4 px-6 rounded-full w-full border border-outline-variant/30 text-center" href="product.html">Select Bundle</a>
 </div>
 <!-- Bundle 2 (Featured) -->
 <div class="bg-surface-container-high border-2 border-secondary p-8 rounded-3xl flex flex-col text-center relative transform md:-translate-y-4 shadow-[0_20px_40px_rgba(0,0,0,0.3)] backdrop-blur-md">
@@ -246,7 +246,7 @@
 <h3 class="font-headline-md text-headline-md text-primary mb-2">The Starting XI</h3>
 <p class="text-on-surface-variant text-sm mb-8 flex-grow">Guaranteed inclusion of at least one 'Legendary' tier nation.</p>
 <p class="text-primary font-headline-md text-headline-md mb-8">$400.00</p>
-<button class="bg-primary text-on-primary-container hover:bg-primary/90 transition-colors font-label-caps text-label-caps uppercase py-4 px-6 rounded-full w-full shadow-[0_10px_20px_rgba(0,0,0,0.2)]">Select Bundle</button>
+<a class="bg-primary text-on-primary-container hover:bg-primary/90 transition-colors font-label-caps text-label-caps uppercase py-4 px-6 rounded-full w-full shadow-[0_10px_20px_rgba(0,0,0,0.2)] text-center" href="product.html">Select Bundle</a>
 </div>
 <!-- Bundle 3 -->
 <div class="bg-surface-container border border-outline-variant/20 p-8 rounded-3xl flex flex-col text-center hover:border-secondary/50 transition-colors backdrop-blur-md">
@@ -256,7 +256,7 @@
 <h3 class="font-headline-md text-headline-md text-primary mb-2">The Tournament</h3>
 <p class="text-on-surface-variant text-sm mb-8 flex-grow">The ultimate collector's sweep. High probability of full set completion.</p>
 <p class="text-primary font-headline-md text-headline-md mb-8">$850.00</p>
-<button class="bg-surface-container-high text-primary hover:bg-white hover:text-on-primary-container transition-colors font-label-caps text-label-caps uppercase py-4 px-6 rounded-full w-full border border-outline-variant/30">Select Bundle</button>
+<a class="bg-surface-container-high text-primary hover:bg-white hover:text-on-primary-container transition-colors font-label-caps text-label-caps uppercase py-4 px-6 rounded-full w-full border border-outline-variant/30 text-center" href="product.html">Select Bundle</a>
 </div>
 </div>
 </div>

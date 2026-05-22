@@ -1,5 +1,6 @@
 (function () {
   let selectedVariant = null;
+  let selectedQuantity = 1;
 
   function setText(selector, value) {
     if (!value) return;
@@ -26,7 +27,7 @@
       return;
     }
     try {
-      await window.DeeplyAfricaStore.ensureCart(selectedVariant.id, 1);
+      await window.DeeplyAfricaStore.ensureCart(selectedVariant.id, selectedQuantity);
       if (redirect) {
         window.location.assign("cart.html");
         return;
@@ -40,6 +41,10 @@
   async function init() {
     const message = document.querySelector("[data-product-message]");
     if (!document.querySelector("[data-product-page]")) return;
+    document.querySelectorAll("[data-product-quantity-change]").forEach((button) => button.addEventListener("click", () => {
+      selectedQuantity = Math.max(1, selectedQuantity + Number(button.dataset.productQuantityChange));
+      setText("[data-product-quantity]", String(selectedQuantity));
+    }));
     document.querySelectorAll("[data-add-product]").forEach((button) => button.addEventListener("click", () => addProduct(false)));
     document.querySelectorAll("[data-buy-product]").forEach((button) => button.addEventListener("click", () => addProduct(true)));
     try {
