@@ -22,7 +22,7 @@ Example static server:
 npx.cmd serve . -l 3000
 ```
 
-The frontend preview expects the API at `http://localhost:8787` until `API_BASE_URL` is changed.
+The committed frontend config targets `https://api-shop.deeplyafrica.com`. Change `API_BASE_URL` only for a separate local preview.
 
 ## Checkout flow
 
