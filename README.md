@@ -5,7 +5,7 @@ Headless storefront and reveal API for the digital **Deeply Africa Mystery Count
 ## Structure
 
 - Static storefront pages live at the repository root and use `css/`, `js/`, and `assets/`.
-- `backend/` contains the Node.js + Express webhook and reveal API.
+- `backend/` contains the Node.js + Express webhook and reveal API, including its Vercel entry point and Neon-backed production storage.
 - Shopify owns the product record, price, cart checkout URL, payment, and order lifecycle.
 
 ## Local setup

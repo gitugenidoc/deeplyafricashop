@@ -9,11 +9,11 @@ Deploy repository-root static files to Vercel static hosting or Cloudflare Pages
 
 ## Backend
 
-Deploy `backend/` to Render, Railway, Vercel-compatible Node hosting, or another Express-capable environment.
+Import `backend/` as a separate Vercel project. `api/index.js` exports the Express app and `vercel.json` rewrites API traffic into that Vercel Function.
 
 - API domain: `api-shop.deeplyafrica.com`.
 - Set all backend environment variables from `.env.example`.
-- Ensure the storage layer is durable. `data/orders.json` is fine for a sample or single-instance prototype, not a multi-instance serverless deployment.
+- Connect the Neon integration to the API project and ensure `DATABASE_URL` exists in Vercel production environment variables.
 - Keep HTTPS enabled because reveal links and Shopify webhooks carry sensitive order flow data.
 
 ## Email
